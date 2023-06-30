@@ -14,13 +14,11 @@
 
   .username-div{
     display: flex;
-    text-align: center;
     justify-content: center;
   }
 
   .password-div{
     display: flex;
-    text-align: center;
     justify-content: center;
   }
 
@@ -81,4 +79,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
+  }
+
+  #username-animate {
+    width: 20vw;
+    height: 2.5vh;
+    overflow:hidden;
+  }
+
+  #password-animate {
+    width: 20vw;
+    height: 2.5vh;
+    overflow:hidden;
+  }
+
+  .home-screen{
+    display: none;
   }
