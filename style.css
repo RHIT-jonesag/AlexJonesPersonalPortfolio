@@ -5,27 +5,29 @@
     overflow-x: hidden;
   }
 
+/* LOGIN PAGE */
+
   /* Alignment of log in page */
   .log-in-page{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: center;: center;
   }
 
   .username-div{
     display: flex;
-    justify-content: center;
+    justify-content: center;: center;
   }
 
   .password-div{
     display: flex;
-    justify-content: center;
+    justify-content: center;: center;
   }
 
   .log-in-button-div{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: center;: center;
   }
 
   /* Styling of log-in page */
@@ -93,6 +95,49 @@
     overflow:hidden;
   }
 
+/* HOME PAGE */
+
   .home-screen{
     display: none;
+    background-color: #EAEFFF;
+    justify-content: center;
   }
+
+  /* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #35394F;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Added a welcome message for the "user" */
+.welcome{
+  float: left;
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #EAEFFF;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #EAEFFF;
+  text-align: center;
+  padding: 19px 16px;
+  text-decoration: none;
+}
+
+/* Change background on hover */
+.navbar a:hover {
+  background: #EAEFFF;
+  color: #35394F;
+}
+
+/* Added Margin for no overlap */
+.main {
+  margin-top: 70px; /* Add a top margin to avoid content: center; overlay */
+}
