@@ -11,23 +11,23 @@
   .log-in-page{
     display: flex;
     text-align: center;
-    justify-content: center;: center;
+    justify-content: center;
   }
 
   .username-div{
     display: flex;
-    justify-content: center;: center;
+    justify-content: center;
   }
 
   .password-div{
     display: flex;
-    justify-content: center;: center;
+    justify-content: center;
   }
 
   .log-in-button-div{
     display: flex;
     text-align: center;
-    justify-content: center;: center;
+    justify-content: center;
   }
 
   /* Styling of log-in page */
