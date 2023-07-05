@@ -5,7 +5,10 @@
     overflow-x: hidden;
   }
 
-/* LOGIN PAGE */
+
+
+
+/* -------------------------LOGIN PAGE------------------------- */
 
   /* Alignment of log in page */
   .log-in-page{
@@ -95,12 +98,17 @@
     overflow:hidden;
   }
 
-/* HOME PAGE */
+
+
+
+/* -------------------------HOME PAGE------------------------- */
 
   .home-screen{
     display: none;
     background-color: #EAEFFF;
     justify-content: center;
+    text-align: center;
+    padding-bottom: 5px;
   }
 
   /* The navigation bar */
@@ -138,6 +146,39 @@
 }
 
 /* Added Margin for no overlap */
-.main {
+.about-tab{
   margin-top: 70px; /* Add a top margin to avoid content: center; overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.about-title{
+  text-decoration: underline;
+}
+
+.projects-tab {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+
+  /* The image used */
+  background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=534122915e&attid=0.1.1&permmsgid=msg-f:1770508343439656360&th=18921bf5329605a8&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ90-HMUk_c1NjTbTrgQnRym7zmiW5gNgSlE_FZpIhpLkMqYWYAlz5XHyJj2rFyLV7FN7FrXQpFw1ss_hesqem-4RoRHRR3KrrBRkeyJYBJGwrRwMThE65Lc064&disp=emb");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-title{
+  color: #EAEFFF;
+  text-decoration: underline;
 }
