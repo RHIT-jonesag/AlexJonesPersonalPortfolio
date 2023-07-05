@@ -5,7 +5,10 @@
     overflow-x: hidden;
   }
 
-
+  /* Removes scrollbar */
+::-webkit-scrollbar{
+  display:none;
+}
 
 
 /* -------------------------LOGIN PAGE------------------------- */
@@ -80,7 +83,7 @@
   }
 
   .log-in-screen{
-    background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=534122915e&attid=0.1&permmsgid=msg-a:r-4533140778047498143&th=1890d83947915bec&view=att&disp=safe&realattid=f_ljiw90xg0);
+    background-image: url(img/Untitled\ design\ \(3\).png);
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
@@ -127,6 +130,7 @@
   padding: 15px 10px;
   text-decoration: none;
   color: #EAEFFF;
+  font-family:'Courier New', Courier, monospace;
 }
 
 /* Links inside the navbar */
@@ -137,6 +141,7 @@
   text-align: center;
   padding: 19px 16px;
   text-decoration: none;
+  font-family:'Courier New', Courier, monospace;
 }
 
 /* Change background on hover */
@@ -147,38 +152,141 @@
 
 /* Added Margin for no overlap */
 .about-tab{
-  margin-top: 70px; /* Add a top margin to avoid content: center; overlay */
+  padding-top: 60px; /* Add a top margin to avoid content: center; overlay */
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   padding-bottom: 5px;
+  background-color: #EAEFFF;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .about-title{
   text-decoration: underline;
+  font-size: 50px;
 }
 
 .projects-tab {
   justify-content: center;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   padding-top: 10px;
 
   /* The image used */
-  background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=534122915e&attid=0.1.1&permmsgid=msg-f:1770508343439656360&th=18921bf5329605a8&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ90-HMUk_c1NjTbTrgQnRym7zmiW5gNgSlE_FZpIhpLkMqYWYAlz5XHyJj2rFyLV7FN7FrXQpFw1ss_hesqem-4RoRHRR3KrrBRkeyJYBJGwrRwMThE65Lc064&disp=emb");
+  background-image: url(img/bg.jpg);
 
   /* Set a specific height */
-  min-height: 100vh;
+  min-height: 70vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  font-family:'Courier New', Courier, monospace;
+  color: #EAEFFF;
+}
+
+.project-image{
+  border-radius: 50px;
 }
 
 .projects-title{
   color: #EAEFFF;
   text-decoration: underline;
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+
+.projects-row1{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.projects-row2{
+  display: flex;
+  justify-content: center;
+}
+
+.projects-links{
+  text-decoration: underline;
+  color: #EAEFFF;
+}
+
+.other-tab {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  background-color: #646880;
+
+  /* Set a specific height */
+  min-height: 37vh;
+
+  font-family:'Courier New', Courier, monospace;
+  color: #EAEFFF;
+}
+
+.other-title{
+  color: #EAEFFF;
+  text-decoration: underline;
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+
+.others{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+
+/* Footer */
+.footer{
+  background-color: #35394F;
+  color: #EAEFFF;
+  padding-top: 60px;
+}
+
+.tribute{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 5px;
+}
+
+.website-by{
+  padding-bottom: 5px;
+  padding-right: 5px;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.contacts{
+  display:flex;
+  justify-content: center;
+  flex-direction:row;
+}
+
+.insta{
+  width: 100px;
+}
+
+.linkedin{
+  width: 100px;
+}
+
+.github{
+  width: 100px;
+}
+
+.discord{
+  width: 100px;
+}
+
+.replit{
+  width: 100px;
 }
