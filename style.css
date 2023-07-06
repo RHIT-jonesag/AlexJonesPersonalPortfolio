@@ -10,6 +10,10 @@
   display:none;
 }
 
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
 
 /* -------------------------LOGIN PAGE------------------------- */
 
@@ -45,7 +49,7 @@
     margin-bottom: 30px;
     border: black solid;
     background-color: #35394F;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 15px;
   }
 
@@ -57,7 +61,7 @@
     padding: 7px;
     border-style: solid;
     border-color:black;
-    border-radius: 50px;
+    border-radius: 30px;
   }
 
   .password{
@@ -69,7 +73,7 @@
     padding: 7px;
     border-style: solid;
     border-color:black;
-    border-radius: 50px;
+    border-radius: 30px;
   }
 
   .log-in-button{
@@ -79,7 +83,7 @@
     background-color: #EAEFFF;
     border-style: solid;
     border-color:black;
-    border-radius: 50px;
+    border-radius: 30px;
   }
 
   .log-in-screen{
@@ -152,19 +156,40 @@
 
 /* Added Margin for no overlap */
 .about-tab{
-  padding-top: 60px; /* Add a top margin to avoid content: center; overlay */
+  padding-top: 80px; /* Add a top margin to avoid content: center; overlay */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   text-align: center;
-  padding-bottom: 5px;
-  background-color: #EAEFFF;
+  padding-bottom: 30px;
+  background-image: url(img/Untitled\ design\ \(20\).png);
   font-family:'Courier New', Courier, monospace;
+  border-bottom: solid #35394F 5px;
 }
+
 
 .about-title{
   text-decoration: underline;
-  font-size: 50px;
+  font-size: 60px;
+  width:19vw;
+  color: #35394F;
+  padding-top: 95px;
+  padding-bottom: 20px;
+}
+
+.about-p{
+  width:50vw;
+  font-size: 20px;
+  background-color:#EAEFFF;
+  padding: 5px;
+  border: solid #35394F 2px;
+  border-radius: 15px;
+}
+
+.self-portrait{
+  width: 510px;
+  border: solid #35394F 5px;
+  border-radius: 100px;
 }
 
 .projects-tab {
@@ -174,10 +199,12 @@
   padding-top: 10px;
 
   /* The image used */
-  background-image: url(img/bg.jpg);
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* Set a specific height */
-  min-height: 70vh;
+  min-height: 150vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -186,29 +213,59 @@
   background-size: cover;
 
   font-family:'Courier New', Courier, monospace;
-  color: #EAEFFF;
+  color: #35394F;
 }
 
 .project-image{
   border-radius: 50px;
+  border:solid #35394F 4px;
 }
 
 .projects-title{
+  display:inline-block;
   color: #EAEFFF;
   text-decoration: underline;
   font-size: 50px;
-  padding-bottom: 25px;
+  padding: 15px;
+  background-color: #646880;
+  border: solid #35394F 3px;
+  margin-bottom:80px;
+  margin-top:30px;
+}
+
+.project-h{
+  color:#EAEFFF;
+  background-color:#646880;
+  border: solid #35394F 3px;
+  border-bottom: none;
+}
+
+.project-p{
+  background-color:#646880;
+  border: solid #35394F 2px;
+  padding: 10px;
+  color:#EAEFFF;
+  border-top:none;
 }
 
 .projects-row1{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-bottom: 40px;
+  margin-bottom:80px;
 }
 
 .projects-row2{
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
+  margin-bottom:80px;
+}
+
+.projects-row3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
 .projects-links{
@@ -237,19 +294,126 @@
   padding-bottom: 15px;
 }
 
+.other-h{
+  text-decoration: underline;
+  color:#EAEFFF;
+}
+
 .others{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-left: 20px;
   padding-right: 20px
 }
 
+/* Contact Me */
+.contact-me{
+  /* The image used */
+  background-image: url(img/bg.jpg);
+
+  /* Set a specific height */
+  min-height: 45vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-title{
+  color:#EAEFFF;
+  font-family:'Courier New', Courier, monospace;
+  display:flex;
+  justify-content: center;
+  padding-top:15px;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.contact-row1{
+  display:flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 15px;
+}
+
+.name{
+  background-color:#EAEFFF;
+  color:#35394F;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 5px;
+  border: solid #35394F 2px;
+  padding:5px;
+  font-size: 30px;
+}
+
+.phone{
+  background-color:#EAEFFF;
+  color:#35394F;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 5px;
+  border: solid #35394F 2px;
+  padding:5px;
+  font-size: 30px;
+}
+
+.email{
+  background-color:#EAEFFF;
+  color:#35394F;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 5px;
+  border: solid #35394F 2px;
+  padding:5px;
+  font-size: 30px;
+}
+
+.contact-row2{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact-row3{
+  display:flex;
+  justify-content: center;
+  padding:15px;
+  padding-bottom: 20px;
+}
+
+.send-message{
+  background-color: #EAEFFF;
+  border:solid #35394F 3px;
+  color:#35394F;
+  padding:15px;
+  font-size:25px;
+  font-family:'Courier New', Courier, monospace;
+  border-radius:10px;
+}
+
+.send-message:hover{
+  background-color: #35394F;
+  color:#EAEFFF;
+}
+
+.message{
+  background-color:#EAEFFF;
+  color:#35394F;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 5px;
+  border: solid #35394F 2px;
+  padding:50px;
+  padding-left:1vw;
+  padding-right:61.6vw;
+  font-size: 30px;
+  margin-top: 30px;
+}
 
 /* Footer */
 .footer{
   background-color: #35394F;
   color: #EAEFFF;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .tribute{
@@ -290,3 +454,53 @@
 .replit{
   width: 100px;
 }
+
+.other1-page{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url(img/Untitled\ design\ \(23\).png);
+  padding-top:20px;
+  min-height: 97.5vh;
+}
+
+.spacing{
+  padding-top:200px;
+}
+
+.other-page-h{
+  background-color: #646880;
+  color:#EAEFFF;
+  border: solid #35394F 3px;
+  padding:5px; 
+  border-bottom: none;
+  text-decoration: underline;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.other-page-p{
+  background-color: #646880;
+  color:#EAEFFF;
+  border: solid #35394F 3px;
+  padding:5px; 
+  border-top: none;
+  font-family:'Courier New', Courier, monospace;
+}
+
+  /* Navbar */
+  .navbar-other {
+    overflow: hidden;
+    background-color: #35394F;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+  .backbutton{
+    float: left;
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #EAEFFF;
+    font-family:'Courier New', Courier, monospace;
+  }
