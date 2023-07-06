@@ -125,6 +125,7 @@ html {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  border-bottom: solid #212331 3px;
 }
 
 /* Added a welcome message for the "user" */
@@ -164,7 +165,7 @@ html {
   padding-bottom: 30px;
   background-image: url(img/Untitled\ design\ \(20\).png);
   font-family:'Courier New', Courier, monospace;
-  border-bottom: solid #35394F 5px;
+  border-bottom: solid #212331 5px;
 }
 
 
@@ -193,10 +194,10 @@ html {
 }
 
 .projects-tab {
+  display: flex;
   justify-content: center;
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 10px;
+  border-bottom: solid #212331 5px;
 
   /* The image used */
   background-image: url(img/background.jpg);
@@ -204,7 +205,7 @@ html {
   background-size: cover;
 
   /* Set a specific height */
-  min-height: 150vh;
+  min-height: 83vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -224,19 +225,19 @@ html {
 .projects-title{
   display:inline-block;
   color: #EAEFFF;
-  text-decoration: underline;
-  font-size: 50px;
+  font-size: 80px;
   padding: 15px;
   background-color: #646880;
-  border: solid #35394F 3px;
+  border: solid #212331 4px;
+  border-radius:10px;
   margin-bottom:80px;
-  margin-top:30px;
+  margin-top:250px;
 }
 
 .project-h{
   color:#EAEFFF;
   background-color:#646880;
-  border: solid #35394F 3px;
+  border: solid #35394F 2px;
   border-bottom: none;
 }
 
@@ -273,12 +274,33 @@ html {
   color: #EAEFFF;
 }
 
+/* Control the left side */
+.left {
+  width:50%;
+  height:83vh;
+  left: 0;
+  background-color: #35394F;
+}
+
+/* Control the right side */
+.right {
+  width:50%;
+  height: 80.5vh;
+  overflow-y:auto;
+  right: 0;
+  background-image: url(img/background.jpg);
+  background-position: 50%;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
 .other-tab {
   justify-content: center;
   text-align: center;
   padding-bottom: 5px;
   padding-top: 15px;
   background-color: #646880;
+  border-bottom: solid #212331 5px;
 
   /* Set a specific height */
   min-height: 37vh;
@@ -496,6 +518,7 @@ html {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    border-bottom: solid #212331 3px;
   }
 
   .backbutton{
