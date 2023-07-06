@@ -485,6 +485,8 @@ html {
   padding:5px; 
   border-top: none;
   font-family:'Courier New', Courier, monospace;
+  width:50vw;
+  font-size:25px;
 }
 
   /* Navbar */
