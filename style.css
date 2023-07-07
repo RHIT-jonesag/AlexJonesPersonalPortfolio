@@ -109,6 +109,21 @@ html {
 
 
 /* -------------------------HOME PAGE------------------------- */
+  .main-tab{
+    background-image: url(img/image\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  .main-title{
+    display:flex;
+    /* justify-content: center; */
+    translate: 80px 350px;
+    font-size:100px;
+    color:#35394F;
+  }
 
   .home-screen{
     display: none;
@@ -119,13 +134,19 @@ html {
   }
 
   /* The navigation bar */
-.navbar {
+  .navbar {
   overflow: hidden;
-  background-color: #35394F;
+  background-color: rgb(53, 57, 79, 0.6);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  border-bottom: solid #212331 3px;
+  z-index: 1;
+}
+
+.navbar.scrolled {
+  background-color: #35394F !important;
+  transition: background-color 200ms linear;
+  border-bottom: solid #212331 2px;
 }
 
 /* Added a welcome message for the "user" */
@@ -150,27 +171,25 @@ html {
 }
 
 /* Change background on hover */
-.navbar a:hover {
+.navbar.scrolled a:hover {
   background: #EAEFFF;
   color: #35394F;
+  border-radius:10px;
 }
 
 /* Added Margin for no overlap */
 .about-tab{
-  padding-top: 80px; /* Add a top margin to avoid content: center; overlay */
+  padding-top: 30px; /* Add a top margin to avoid content: center; overlay */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
   padding-bottom: 30px;
-  background-image: url(img/Untitled\ design\ \(20\).png);
+  background-color: #d8ddee;
   font-family:'Courier New', Courier, monospace;
-  border-bottom: solid #212331 5px;
 }
 
-
 .about-title{
-  text-decoration: underline;
   font-size: 60px;
   width:19vw;
   color: #35394F;
@@ -181,45 +200,25 @@ html {
 .about-p{
   width:50vw;
   font-size: 20px;
-  background-color:#EAEFFF;
   padding: 5px;
-  border: solid #35394F 2px;
   border-radius: 15px;
+  text-align: left;
+  color:#35394F;
 }
 
 .self-portrait{
   width: 510px;
-  border: solid #35394F 5px;
-  border-radius: 100px;
+  border-radius: 5px;
 }
 
 .projects-tab {
   display: flex;
   justify-content: center;
   text-align: center;
-  border-bottom: solid #212331 5px;
-
-  /* The image used */
-  background-image: url(img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* Set a specific height */
-  min-height: 83vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  min-height: 700px;
+  max-height: 700px;
   font-family:'Courier New', Courier, monospace;
   color: #35394F;
-}
-
-.project-image{
-  border-radius: 50px;
-  border:solid #35394F 4px;
 }
 
 .projects-title{
@@ -227,71 +226,99 @@ html {
   color: #EAEFFF;
   font-size: 80px;
   padding: 15px;
-  background-color: #646880;
-  border: solid #212331 4px;
   border-radius:10px;
-  margin-bottom:80px;
-  margin-top:250px;
+  translate:-1vh 27vh;
 }
 
 .project-h{
   color:#EAEFFF;
-  background-color:#646880;
-  border: solid #35394F 2px;
-  border-bottom: none;
+  font-size: 70px;
+  display:flex;
+  justify-content: left;
+  text-align: left;
+  font-style: italic;
+  width:60%;
+  translate: 100px 50px;
+  border-top: solid #EAEFFF 1px;
+}
+
+.project-h:hover{
+  color:#00e5ff;
 }
 
 .project-p{
-  background-color:#646880;
-  border: solid #35394F 2px;
-  padding: 10px;
   color:#EAEFFF;
-  border-top:none;
+  justify-content: center;
+  text-align: left;
+  font-size: 25px;
+  width:60%;
+  translate: 110px 40px;
+  padding-top:15px;
 }
 
 .projects-row1{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding-bottom: 40px;
-  margin-bottom:80px;
+  margin-top:200px;
+  margin-left: 40px;
+  overflow-y: hidden;
 }
 
 .projects-row2{
-  display: flex;
-  justify-content: center;
+  display: none;
+  justify-content: left;
   padding-bottom: 40px;
-  margin-bottom:80px;
+  margin-bottom:200px;
+  margin-top:200px;
+  margin-left: 40px;
 }
 
 .projects-row3{
-  display: flex;
-  justify-content: center;
+  display: none;
+  justify-content: left;
   padding-bottom: 40px;
+  margin-bottom:200px;
+  margin-top:200px;
+  margin-left: 40px;
+}
+
+.project-navbar{
+  display:flex;
+  justify-content: center;
+  translate: 0px 190px;
+}
+
+.pnb-link{
+  color:#EAEFFF;
+  text-decoration: none;
+  margin:5px;
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .projects-links{
-  text-decoration: underline;
+  text-decoration: none;
   color: #EAEFFF;
 }
 
 /* Control the left side */
 .left {
   width:50%;
-  height:83vh;
+  max-height:700px;
   left: 0;
-  background-color: #35394F;
+  background-image:url(img/Untitled\ design\ \(29\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Control the right side */
 .right {
-  width:50%;
-  height: 80.5vh;
-  overflow-y:auto;
+  width:70%;
+  overflow-y: hidden;
   right: 0;
-  background-image: url(img/background.jpg);
+  background-color: #818495;
   background-position: 50%;
-  padding-top:10px;
-  padding-bottom:10px;
 }
 
 .other-tab {
@@ -300,7 +327,6 @@ html {
   padding-bottom: 5px;
   padding-top: 15px;
   background-color: #646880;
-  border-bottom: solid #212331 5px;
 
   /* Set a specific height */
   min-height: 37vh;
@@ -311,7 +337,6 @@ html {
 
 .other-title{
   color: #EAEFFF;
-  text-decoration: underline;
   font-size: 50px;
   padding-bottom: 15px;
 }
@@ -319,6 +344,10 @@ html {
 .other-h{
   text-decoration: underline;
   color:#EAEFFF;
+}
+
+.other-h:hover{
+  color:#00e5ff;
 }
 
 .others{
@@ -350,7 +379,6 @@ html {
   justify-content: center;
   padding-top:15px;
   font-size: 50px;
-  text-decoration: underline;
 }
 
 .contact-row1{
@@ -461,20 +489,45 @@ html {
   width: 100px;
 }
 
+.insta:hover{
+  background-color: #646880;
+  border-radius:10px;
+}
+
 .linkedin{
   width: 100px;
+}
+
+.linkedin:hover{
+  background-color: #646880;
+  border-radius:10px;
 }
 
 .github{
   width: 100px;
 }
 
+.github:hover{
+  background-color: #646880;
+  border-radius:10px;
+}
+
 .discord{
   width: 100px;
 }
 
+.discord:hover{
+  background-color: #646880;
+  border-radius:10px;
+}
+
 .replit{
   width: 100px;
+}
+
+.replit:hover{
+  background-color: #646880;
+  border-radius:10px;
 }
 
 .other1-page{
@@ -528,4 +581,216 @@ html {
     text-decoration: none;
     color: #EAEFFF;
     font-family:'Courier New', Courier, monospace;
+  }
+
+
+
+  /* ------------------------------ Animation goes here ------------------------------ */
+
+  .fadeInLeft{
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+  }
+
+  .fadeInRight{
+    -webkit-animation: fadeInRight 1.2s both;
+    -moz-animation: fadeInRight 1.2s both;
+    -o-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both;
+  }
+
+  .fadeInBottom{
+    -webkit-animation: fadeInBottom 1.2s both;
+    -moz-animation: fadeInBottom 1.2s both;
+    -o-animation: fadeInBottom 1.2s both;
+    animation: fadeInBottom 1.2s both;
+  }
+
+  .fadeInTop{
+    -webkit-animation: fadeInTop 1.2s both;
+    -moz-animation: fadeInTop 1.2s both;
+    -o-animation: fadeInTop 1.2s both;
+    animation: fadeInTop 1.2s both;
+  }
+
+  /* Fade in left */
+  @-webkit-keyframes fadeInLeft {
+    0%{
+      opacity:0;
+      -webkit-transform: translateX(-50px);
+    }
+    100%{
+      opacity:1;
+      -webkit-transform: translateX(0px);
+    }
+  }
+
+  @-moz-keyframes fadeInLeft {
+    0%{
+      opacity:0;
+      -moz-transform: translateX(-50px);
+    }
+    100%{
+      opacity:1;
+      -moz-transform: translateX(0px);
+    }
+  }
+
+  @-o-keyframes fadeInLeft {
+    0%{
+      opacity:0;
+      -o-transform: translateX(-50px);
+    }
+    100%{
+      opacity:1;
+      -o-transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0%{
+      opacity:0;
+      transform: translateX(-50px);
+    }
+    100%{
+      opacity:1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* Fade in right */
+  @-webkit-keyframes fadeInRight {
+    0%{
+      opacity:0;
+      -webkit-transform: translateX(50px);
+    }
+    100%{
+      opacity:1;
+      -webkit-transform: translateX(0px);
+    }
+  }
+
+  @-moz-keyframes fadeInRight {
+    0%{
+      opacity:0;
+      -moz-transform: translateX(50px);
+    }
+    100%{
+      opacity:1;
+      -moz-transform: translateX(0px);
+    }
+  }
+
+  @-o-keyframes fadeInRight {
+    0%{
+      opacity:0;
+      -o-transform: translateX(50px);
+    }
+    100%{
+      opacity:1;
+      -o-transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadeInRight {
+    0%{
+      opacity:0;
+      transform: translateX(50px);
+    }
+    100%{
+      opacity:1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* Fade in bottom */
+  @-webkit-keyframes fadeInBottom {
+    0%{
+      opacity:0;
+      -webkit-transform: translateY(50px);
+    }
+    100%{
+      opacity:1;
+      -webkit-transform: translateY(0px);
+    }
+  }
+
+  @-moz-keyframes fadeInBottom {
+    0%{
+      opacity:0;
+      -moz-transform: translateY(50px);
+    }
+    100%{
+      opacity:1;
+      -moz-transform: translateY(0px);
+    }
+  }
+
+  @-o-keyframes fadeInBottom {
+    0%{
+      opacity:0;
+      -o-transform: translateY(50px);
+    }
+    100%{
+      opacity:1;
+      -o-transform: translateY(0px);
+    }
+  }
+
+  @keyframes fadeInBottom {
+    0%{
+      opacity:0;
+      transform: translateY(50px);
+    }
+    100%{
+      opacity:1;
+      transform: translateY(0px);
+    }
+  }
+
+  /* Fade in top */
+  @-webkit-keyframes fadeInTop {
+    0%{
+      opacity:0;
+      -webkit-transform: translateY(-50px);
+    }
+    100%{
+      opacity:1;
+      -webkit-transform: translateY(0px);
+    }
+  }
+
+  @-moz-keyframes fadeInTop {
+    0%{
+      opacity:0;
+      -moz-transform: translateY(-50px);
+    }
+    100%{
+      opacity:1;
+      -moz-transform: translateY(0px);
+    }
+  }
+
+  @-o-keyframes fadeInTop {
+    0%{
+      opacity:0;
+      -o-transform: translateY(-50px);
+    }
+    100%{
+      opacity:1;
+      -o-transform: translateY(0px);
+    }
+  }
+
+  @keyframes fadeInTop {
+    0%{
+      opacity:0;
+      transform: translateY(-50px);
+    }
+    100%{
+      opacity:1;
+      transform: translateY(0px);
+    }
   }
