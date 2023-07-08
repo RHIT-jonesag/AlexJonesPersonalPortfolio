@@ -45,23 +45,20 @@ html {
     font-family:'Courier New', Courier, monospace;
     color: #EAEFFF;
     font-size: 100px;
-    margin-top: 130px;
-    margin-bottom: 30px;
-    border: black solid;
-    background-color: #35394F;
-    border-radius: 30px;
+    margin-top: 200px;
+    margin-bottom: 10px;
     padding: 15px;
   }
 
   .username{
     font-size: 20px;
     margin: 20px;
-    background-color: #EAEFFF;
-    color: rgb(53, 57, 79);
-    padding: 7px;
+    background-color: #646880;
+    color: #EAEFFF;
+    padding: 8px;
     border-style: solid;
-    border-color:black;
-    border-radius: 30px;
+    border-color:#212331;
+    border-radius: 10px;
   }
 
   .password{
@@ -72,22 +69,22 @@ html {
     color: rgb(53, 57, 79);
     padding: 7px;
     border-style: solid;
-    border-color:black;
+    border-color:#212331;
     border-radius: 30px;
   }
 
   .log-in-button{
     font-size: 20px;
     padding: 5px;
-    color: rgb(53, 57, 79);
-    background-color: #EAEFFF;
+    color: #EAEFFF;
+    background-color: #646880;
     border-style: solid;
-    border-color:black;
-    border-radius: 30px;
+    border-color: #212331;
+    border-radius: 10px;
   }
 
   .log-in-screen{
-    background-image: url(img/Untitled\ design\ \(3\).png);
+    background-image: url(img/Untitled\ design\ \(40\).png);
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
@@ -110,7 +107,7 @@ html {
 
 /* -------------------------HOME PAGE------------------------- */
   .main-tab{
-    background-image: url(img/image\ \(1\).png);
+    background-image: url(img//Untitled\ design\ \(34\).png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -122,7 +119,7 @@ html {
     /* justify-content: center; */
     translate: 80px 350px;
     font-size:100px;
-    color:#35394F;
+    color:#EAEFFF;
   }
 
   .home-screen{
@@ -136,7 +133,7 @@ html {
   /* The navigation bar */
   .navbar {
   overflow: hidden;
-  background-color: rgb(53, 57, 79, 0.6);
+  background-color: rgb(234, 239, 255, 0);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -170,7 +167,11 @@ html {
   font-family:'Courier New', Courier, monospace;
 }
 
-/* Change background on hover */
+.navbar a:hover{
+  color: white;
+}
+
+/* Change scrolled background on hover */
 .navbar.scrolled a:hover {
   background: #EAEFFF;
   color: #35394F;
@@ -227,79 +228,60 @@ html {
   font-size: 80px;
   padding: 15px;
   border-radius:10px;
-  translate:-1vh 27vh;
+  translate:-1vh 35vh;
 }
 
-.project-h{
-  color:#EAEFFF;
-  font-size: 70px;
+.mySlides{
   display:flex;
-  justify-content: left;
+  justify-content: center;
+  flex-direction: column;
   text-align: left;
+  color:#EAEFFF;
+  translate: 150px 200px;
+  width:70%;
+}
+
+.slide-link{
+  text-decoration: none;
+  color:#EAEFFF;
+}
+
+.slide-title{
+  font-size: 50px;
   font-style: italic;
-  width:60%;
-  translate: 100px 50px;
-  border-top: solid #EAEFFF 1px;
 }
 
-.project-h:hover{
-  color:#00e5ff;
-}
-
-.project-p{
-  color:#EAEFFF;
-  justify-content: center;
-  text-align: left;
-  font-size: 25px;
-  width:60%;
-  translate: 110px 40px;
-  padding-top:15px;
-}
-
-.projects-row1{
-  display: flex;
-  justify-content: left;
-  padding-bottom: 40px;
-  margin-top:200px;
-  margin-left: 40px;
-  overflow-y: hidden;
-}
-
-.projects-row2{
-  display: none;
-  justify-content: left;
-  padding-bottom: 40px;
-  margin-bottom:200px;
-  margin-top:200px;
-  margin-left: 40px;
-}
-
-.projects-row3{
-  display: none;
-  justify-content: left;
-  padding-bottom: 40px;
-  margin-bottom:200px;
-  margin-top:200px;
-  margin-left: 40px;
-}
-
-.project-navbar{
-  display:flex;
-  justify-content: center;
-  translate: 0px 190px;
-}
-
-.pnb-link{
-  color:#EAEFFF;
-  text-decoration: none;
-  margin:5px;
+.slide-text{
   font-size: 20px;
-  font-family:'Courier New', Courier, monospace;
 }
 
-.projects-links{
-  text-decoration: none;
-  color: #EAEFFF;
+.slide-buttons{
+  display: flex;
+  justify-content: center;
+  translate: 0px 220px;
+  font-size: 50px;
+}
+
+.prev{
+  margin-right: 15px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius:5px;
+}
+
+.prev:hover{
+  background-color: #646880;
+}
+
+.next{
+  margin-left: 15px;
+  padding-left:5px;
+  padding-right:5px;
+  border-radius:5px;
+}
+
+.next:hover{
+  background-color: #646880;
 }
 
 /* Control the left side */
@@ -321,12 +303,20 @@ html {
   background-position: 50%;
 }
 
+.other-bg{
+  background-image: url(img/Untitled\ design\ \(36\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .other-tab {
+  display:flex;
   justify-content: center;
   text-align: center;
   padding-bottom: 5px;
   padding-top: 15px;
-  background-color: #646880;
+  background-color: #3b4268;
+  margin:auto;
 
   /* Set a specific height */
   min-height: 37vh;
@@ -337,30 +327,146 @@ html {
 
 .other-title{
   color: #EAEFFF;
-  font-size: 50px;
+  font-size: 70px;
   padding-bottom: 15px;
+  font-style:italic;
+  margin-top: 20px;
 }
 
 .other-h{
   text-decoration: underline;
   color:#EAEFFF;
+  font-size: 40px;
+  font-style:italic;
 }
 
 .other-h:hover{
   color:#00e5ff;
 }
 
+.other-p{
+  font-size:20px;
+}
+
+.line1{
+  display:flex;
+  justify-content: center;
+  width:1px;
+  height:150px;
+  background-color: white;
+  translate: 450px;
+}
+
+.line2{
+  display:flex;
+  justify-content: center;
+  width:1px;
+  height:150px;
+  background-color: white;
+  translate: 450px;
+}
+
+.line3{
+  display:flex;
+  justify-content: center;
+  width:1px;
+  height:150px;
+  background-color: white;
+  translate: 450px;
+}
+
+.line4{
+  display:flex;
+  justify-content: center;
+  width:1px;
+  height:150px;
+  background-color: #3b4268;
+  translate: 450px;
+}
+
 .others{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px
+}
+
+.other1{
+  display:flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  padding-left: 20px;
-  padding-right: 20px
+  translate: 150px;
+  overflow:hidden;
+  margin-top: 100px;
+}
+
+.other1-text{
+  translate: 0px 40px;
+}
+
+.other2{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  translate: -130px;
+  overflow:hidden;
+}
+
+.other2-text{
+  translate: 0px 40px;
+}
+
+.other3{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  translate: 143px;
+  overflow:hidden;
+}
+
+.other3-text{
+  translate: 0px 40px;
+}
+
+.other4{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  translate: -125px;
+  overflow:hidden;
+}
+
+.other4-text{
+  translate: 0px 40px;
+}
+
+
+.project-image1{
+  opacity: 0;
+  border-radius:6px;
+}
+
+.project-image2{
+  opacity: 0;
+  border-radius:6px;
+}
+
+.project-image3{
+  opacity: 0; 
+  translate: -15px;
+  border-radius:6px;
+}
+
+.project-image4{
+  opacity: 0;
+  border-radius:6px;
 }
 
 /* Contact Me */
 .contact-me{
   /* The image used */
-  background-image: url(img/bg.jpg);
+  background-image: url(img/Untitled\ design\ \(39\).png);
 
   /* Set a specific height */
   min-height: 45vh;
@@ -534,7 +640,9 @@ html {
   display:flex;
   justify-content: center;
   text-align: center;
-  background-image: url(img/Untitled\ design\ \(23\).png);
+  background-image: url(img/Untitled\ design\ \(40\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top:20px;
   min-height: 97.5vh;
 }
@@ -544,21 +652,17 @@ html {
 }
 
 .other-page-h{
-  background-color: #646880;
   color:#EAEFFF;
-  border: solid #35394F 3px;
-  padding:5px; 
+  padding:10px; 
   border-bottom: none;
-  text-decoration: underline;
+  font-style:italic;
+  font-size: 60px;
   font-family:'Courier New', Courier, monospace;
 }
 
 .other-page-p{
-  background-color: #646880;
   color:#EAEFFF;
-  border: solid #35394F 3px;
   padding:5px; 
-  border-top: none;
   font-family:'Courier New', Courier, monospace;
   width:50vw;
   font-size:25px;
@@ -567,20 +671,27 @@ html {
   /* Navbar */
   .navbar-other {
     overflow: hidden;
-    background-color: #35394F;
+    background-color: rgb(53, 57, 79, 0);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    border-bottom: solid #212331 3px;
   }
 
   .backbutton{
+    background-color: #212331;
+    border-radius:6px;
     float: left;
     display: block;
     padding: 15px 10px;
+    margin:5px;
     text-decoration: none;
     color: #EAEFFF;
     font-family:'Courier New', Courier, monospace;
+  }
+
+  .backbutton:hover{
+    background-color: #818495;
+    border-radius:6px;
   }
 
 

@@ -30,14 +30,16 @@
         <div class="about-text">
             <p class = "about-title">About Me</p>
             <p class="about-p">My name is Alex Jones and I am an aspiring computer scientist. I am currently 17 years old
-                and I plan on going to college to double major in software development & graphic design, and also minor in 
-                entrepernuership. I love coming up with new business ideas and often lack the experience to bring them to fruition. 
+                and I will start college in the fall of 2024. My plan is to double major in software development & graphic design, and also 
+                minor in 
+                entrepernuership. I love coming up with new business ideas and I look forward to bringing them to fruition. 
                 Along with making new business ideas, I spend my time by playing
                 video games with my friends, playing volleyball, and playing dungeons and dragons. When I'm not playing games 
                 I like to watch tv, code, or I tend to get motivated to do random things like making a new business or rearanging my room.
                 I also occasionally like to read self-improvement books. One of my favorites is "Atomic Habits" by James Clear.
                 This book has taught me the lesson that everyone has the power to cause great change in their own life and other peoples
                 lives too, and I've implemented that into my actions each day since reading it. 
+                <!------------------------------- Talk about when you were first introduced to code --------------------------------------------------------------------------------------------------------------->
             </p>
         </div>
         <img src="img/self-portrait.jpg" class="self-portrait">
@@ -49,70 +51,85 @@
             <p class = "projects-title">My Projects</p>
         </div>
         <div class="split right">
-            <div class="projects-row1">
-                <div class="project1">
-                    <!-- <img class="project-image" src="img/Untitled design (15).png" style="width:300px"> -->
-                    <a class="projects-links" href="https://replit.com/@Kona56/Intro-Unit-2-Project-Starter-Code-3" target="_blank">
-                        <p class="project-h">The Male Post</p>
-                    </a>
-                    <p class="project-p">A website created by me thats goal is to bring awareness to the issue of 
-                        mens mental health. I believe it is an important issue in todays society and I think it is worth mentioning more 
-                        regularily. 
-                    </p>
-                </div>
+            
+            <div class="mySlides">
+                <a class="slide-link" href="https://replit.com/@kona56/Intro-Unit-2-Project-Starter-Code-3" target="_blank">
+                    <p class="slide-title">The Male Post</p>
+                </a>
+                <p class="slide-text">The Male Post is the first website I made during the summer of 2023. I created it to bring awareness to 
+                    men's mental health. I think it is an important topic to bring awareness to in todays culture which is why I chose this 
+                    topic. Additionally, the name and logo were made by me too.
+                </p>
             </div>
-            <div class="projects-row2">
-                <div class="project2">
-                    <!-- <img class="project-image" src="img/Untitled design (16).png" style="width:300px"> -->
-                    <a class="projects-links" href="https://replit.com/@Kona56/Jones-Alex-Intro-Unit-3-Starter-Code" target="_blank">
-                        <p class="project-h">Choose Your Own Adventure</p>
-                    </a>
-                    <p class="project-p">An adventure game that has 5 outcomes based on your decisions</p>
-                </div>
+            <div class="mySlides fadeInRight" style="display: none">
+                <a class="slide-link" href="https://replit.com/@kona56/Jones-Alex-Intro-Unit-3-Starter-Code" target="_blank">
+                    <p class="slide-title">The Split Path</p>
+                </a>
+                <p class="slide-text">The Split Path is a "choose your own adventure" game that I coded as my second main project during the 
+                    summer of 2023. The game presents you with two options on each screen that lead to several outcomes for the story.
+                </p>
             </div>
-            <div class="projects-row3">
-                <div class="project3">
-                    <!-- <img class="project-image" src="img/Untitled design (17).png" style="width:300px"> -->
-                    <a class="projects-links" href="https://replit.com/@Kona56/Buzzfeed-quiz#index.html" target="_blank">
-                        <p class="project-h">Buzzfeed Quiz</p>
-                    </a>
-                    <p class="project-p">A quiz that gives 4 different results based on your choices</p>
-                </div>
+            <div class="mySlides fadeInRight" style="display: none">
+                <a class="slide-link" href="https://replit.com/@kona56/Buzzfeed-quiz" target="_blank">
+                    <p class="slide-title">What Kind of Meat Are You?</p>
+                </a>
+                <p class="slide-text">This Buzzfeed Quiz was the third main project I coded during the summer of 2023. Similar to The Split Path, 
+                    in this, you answer two questions that give you an answer as to what kind of meat you are.
+                </p>
+            </div>
+            <!-------------------------------------------- Add the UI/UX presentation ---------------------------------------------------------------------------------------------------->
+            <div class="slide-buttons">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
     </div>
 
     <!-- Other -->
-    <div class="other-tab" id="other-scroll">
-        <p class = "other-title">Other Accomplishments</p>
-        <div class="others">
-            <div class="other1">
-                <img class="project-image" src="img/Kaizen Tutoring (5).png" style="width:150px">
-                <a href="kaizenTutoring.html">
-                    <p class="other-h">Kaizen Tutoring</p>
-                </a>
-                <p>Tutoring Business I started</p>
-            </div>
-            <div class="other2">
-                <img class="project-image" src="img/Copy of WOVEN.png" style="width:150px">
-                <a href="wovenTime.html">
-                    <p class="other-h">Woven Time</p>
-                </a>
-                <p>Watch Band Business I planned</p>
-            </div>
-            <div class="other3">
-                <img class="project-image" src="img/Untitled design (18).png" style="width:150px">
-                <a href="cadDesign.html">
-                    <p class="other-h">CAD Design</p>
-                </a>
-                <p>Several designs from PLTW classes</p>
-            </div>
-            <div class="other4">
-                <img class="project-image" src="img/Untitled design (22).png" style="width:150px">
-                <a href="tronGame.html">
-                    <p class="other-h">Tron Game</p>
-                </a>
-                <p>An arcade game I made in python</p>
+    <div class="other-bg">
+        <div class="other-tab" id="other-scroll" style="width:1000px">
+            <div class="others">
+                <p class = "other-title">Other Accomplishments</p>
+                <div class="other1">
+                    <div class="other1-text">
+                        <a href="kaizenTutoring.html">
+                            <p class="other-h">Kaizen Tutoring</p>
+                        </a>
+                        <p class="other-p">Tutoring Business I started</p>
+                    </div>
+                    <img class="project-image1" src="img/Kaizen Tutoring (5).png" style="width:150px">
+                </div>
+                <div class="line1"></div>
+                <div class="other2">
+                    <img class="project-image2" src="img/Copy of WOVEN.png" style="width:150px">
+                    <div class="other2-text">
+                        <a href="wovenTime.html">
+                            <p class="other-h">Woven Time</p>
+                        </a>
+                        <p class="other-p">Watch Band Business I planned</p>
+                    </div>
+                </div>
+                <div class="line2"></div>
+                <div class="other3">
+                    <div class="other3-text">
+                        <a href="cadDesign.html">
+                            <p class="other-h">CAD Design</p>
+                        </a>
+                        <p class="other-p">Several designs from PLTW classes</p>
+                    </div>
+                    <img class="project-image3" src="img/Untitled design (18).png" style="width:150px">
+                </div>
+                <div class="line3"></div>
+                <div class="other4">
+                    <img class="project-image4" src="img/Untitled design (22).png" style="width:150px">
+                    <div class="other4-text">
+                        <a href="tronGame.html">
+                            <p class="other-h">Tron Game</p>
+                        </a>
+                        <p class="other-p">An arcade game I made in python</p>
+                    </div>
+                </div>
+                <div class="line4"></div>
             </div>
         </div>
     </div>
