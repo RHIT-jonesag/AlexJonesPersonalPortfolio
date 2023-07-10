@@ -65,6 +65,8 @@ $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    document.querySelector(".about-text").classList.add("fadeInTop")
+      document.querySelector(".self-portrait").classList.add("fadeInRight")
   });
 });
 
@@ -75,19 +77,6 @@ $(function () {
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
-
-
-// About Page Fade on Scroll
-const observer1 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".about-text").classList.add("fadeInTop")
-      document.querySelector(".self-portrait").classList.add("fadeInRight")
-    }
-  })
-})
-
-observer1.observe(document.querySelector(".about-title"));
 
 
 // Projects Page Fade on Scroll
