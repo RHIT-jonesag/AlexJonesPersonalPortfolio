@@ -117,7 +117,9 @@ html {
   .main-title{
     display:flex;
     /* justify-content: center; */
-    translate: 80px 350px;
+    margin-top: 40vh;
+    margin-left: 5vh;
+    /* translate: 80px 350px; */
     font-size:100px;
     color:#EAEFFF;
   }
@@ -168,13 +170,13 @@ html {
 }
 
 .navbar a:hover{
-  color: white;
+  color: #EAEFFF;
 }
 
 /* Change scrolled background on hover */
 .navbar.scrolled a:hover {
-  background: #EAEFFF;
-  color: #35394F;
+  background: #adb8dd;
+  color: #212331;
   border-radius:10px;
 }
 
@@ -183,7 +185,9 @@ html {
   padding-top: 30px; /* Add a top margin to avoid content: center; overlay */
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-left:5vh;
+  padding-right:5vh;
   text-align: center;
   padding-bottom: 30px;
   background-color: #d8ddee;
@@ -216,8 +220,8 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
-  min-height: 700px;
-  max-height: 700px;
+  min-height: 69vh;
+  max-height: 69vh;
   font-family:'Courier New', Courier, monospace;
   color: #35394F;
 }
@@ -228,7 +232,7 @@ html {
   font-size: 80px;
   padding: 15px;
   border-radius:10px;
-  translate:-1vh 35vh;
+  margin-top: 27vh;
 }
 
 .mySlides{
@@ -237,7 +241,8 @@ html {
   flex-direction: column;
   text-align: left;
   color:#EAEFFF;
-  translate: 150px 200px;
+  margin-top: 20vh;
+  margin-left: 15vh;
   width:70%;
 }
 
@@ -258,7 +263,7 @@ html {
 .slide-buttons{
   display: flex;
   justify-content: center;
-  translate: 0px 220px;
+  margin-top: 2vh;
   font-size: 50px;
 }
 
@@ -341,7 +346,7 @@ html {
 }
 
 .other-h:hover{
-  color:#00e5ff;
+  color:#adb8dd;
 }
 
 .other-p{
@@ -444,32 +449,34 @@ html {
 
 .project-image1{
   opacity: 0;
-  border-radius:6px;
+  border-radius:600px;
 }
 
 .project-image2{
   opacity: 0;
-  border-radius:6px;
+  border-radius:600px;
 }
 
 .project-image3{
   opacity: 0; 
   translate: -15px;
-  border-radius:6px;
+  border-radius:600px;
 }
 
 .project-image4{
   opacity: 0;
-  border-radius:6px;
+  border-radius:600px;
 }
 
 /* Contact Me */
 .contact-me{
   /* The image used */
-  background-image: url(img/Untitled\ design\ \(39\).png);
+  background-color: #35394f;
+
+  /* url(img/Untitled\ design\ \(39\).png) */
 
   /* Set a specific height */
-  min-height: 45vh;
+  min-height: 36vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -495,8 +502,8 @@ html {
 }
 
 .name{
-  background-color:#EAEFFF;
-  color:#35394F;
+  background-color:#adb8dd;
+  color:#212331;
   font-family:'Courier New', Courier, monospace;
   border-radius: 5px;
   border: solid #35394F 2px;
@@ -505,8 +512,8 @@ html {
 }
 
 .phone{
-  background-color:#EAEFFF;
-  color:#35394F;
+  background-color:#adb8dd;
+  color:#212331;
   font-family:'Courier New', Courier, monospace;
   border-radius: 5px;
   border: solid #35394F 2px;
@@ -515,13 +522,29 @@ html {
 }
 
 .email{
-  background-color:#EAEFFF;
-  color:#35394F;
+  background-color:#adb8dd;
+  color:#212331;
   font-family:'Courier New', Courier, monospace;
   border-radius: 5px;
   border: solid #35394F 2px;
   padding:5px;
   font-size: 30px;
+}
+
+.name::placeholder{
+  color: #45485a;
+}
+
+.phone::placeholder{
+  color: #45485a;
+}
+
+.email::placeholder{
+  color: #45485a;
+}
+
+.message::placeholder{
+  color: #45485a;
 }
 
 .contact-row2{
@@ -538,9 +561,9 @@ html {
 }
 
 .send-message{
-  background-color: #EAEFFF;
+  background-color: #adb8dd;
   border:solid #35394F 3px;
-  color:#35394F;
+  color:#212331;
   padding:15px;
   font-size:25px;
   font-family:'Courier New', Courier, monospace;
@@ -548,26 +571,25 @@ html {
 }
 
 .send-message:hover{
-  background-color: #35394F;
+  background-color: #646880;
   color:#EAEFFF;
 }
 
 .message{
-  background-color:#EAEFFF;
-  color:#35394F;
+  background-color:#adb8dd;
+  color:#212331;
   font-family:'Courier New', Courier, monospace;
   border-radius: 5px;
   border: solid #35394F 2px;
-  padding:50px;
-  padding-left:1vw;
-  padding-right:61.6vw;
+  padding:10px;
   font-size: 30px;
   margin-top: 30px;
+  width: 86.2%;
 }
 
 /* Footer */
 .footer{
-  background-color: #35394F;
+  background-color: #2c2e3b;
   color: #EAEFFF;
   padding-top: 40px;
 }
@@ -577,12 +599,14 @@ html {
   justify-content: space-between;
   flex-direction: row;
   padding-left: 5px;
+  color:#adb8dd;
 }
 
 .website-by{
   padding-bottom: 5px;
   padding-right: 5px;
   font-family:'Courier New', Courier, monospace;
+  color:#adb8dd;
 }
 
 .contacts{
@@ -596,7 +620,7 @@ html {
 }
 
 .insta:hover{
-  background-color: #646880;
+  background-color: #45485a;
   border-radius:10px;
 }
 
@@ -605,7 +629,7 @@ html {
 }
 
 .linkedin:hover{
-  background-color: #646880;
+  background-color: #45485a;
   border-radius:10px;
 }
 
@@ -614,7 +638,7 @@ html {
 }
 
 .github:hover{
-  background-color: #646880;
+  background-color: #45485a;
   border-radius:10px;
 }
 
@@ -623,7 +647,7 @@ html {
 }
 
 .discord:hover{
-  background-color: #646880;
+  background-color: #45485a;
   border-radius:10px;
 }
 
@@ -632,7 +656,7 @@ html {
 }
 
 .replit:hover{
-  background-color: #646880;
+  background-color: #45485a;
   border-radius:10px;
 }
 
@@ -694,6 +718,18 @@ html {
     border-radius:6px;
   }
 
+  .backbutton-button{
+    background-color: #212331;
+    border-radius: 6px;
+    border:0px;
+    padding:0px;
+    margin:5px;
+  }
+
+  .backbutton-button:hover{
+    background-color: #818495;
+    border-radius:6px;
+  }
 
 
   /* ------------------------------ Animation goes here ------------------------------ */
@@ -724,6 +760,20 @@ html {
     -moz-animation: fadeInTop 1.2s both;
     -o-animation: fadeInTop 1.2s both;
     animation: fadeInTop 1.2s both;
+  }
+
+  .stretch{
+    animation: stretch-line 1.2s both;
+  }
+
+  /* Stretch Line */
+  @keyframes stretch-line {
+    0%{
+      height:0px;
+    }
+    100%{
+      height:150px;
+    }
   }
 
   /* Fade in left */

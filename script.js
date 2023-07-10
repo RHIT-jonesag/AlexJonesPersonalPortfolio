@@ -114,6 +114,39 @@ const observer4 = new IntersectionObserver(entries => {
 
 observer4.observe(document.querySelector(".other1-text"));
 
+// Line 1 Fade on Scroll
+const observer8 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      document.querySelector(".line1").classList.add("stretch")
+    }
+  })
+})
+
+observer8.observe(document.querySelector(".line1"));
+
+// Line 2 Fade on Scroll
+const observer9 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      document.querySelector(".line2").classList.add("stretch")
+    }
+  })
+})
+
+observer9.observe(document.querySelector(".line2"));
+
+// Line 3 Fade on Scroll
+const observer10 = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting){
+      document.querySelector(".line3").classList.add("stretch")
+    }
+  })
+})
+
+observer10.observe(document.querySelector(".line3"));
+
 // Other 2 Fade on Scroll
 const observer5 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
