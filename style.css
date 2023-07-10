@@ -253,6 +253,10 @@ html {
   color:#EAEFFF;
 }
 
+.slide-link:hover{
+  color:#adb8dd;
+}
+
 .slide-title{
   font-size: 50px;
   font-style: italic;
