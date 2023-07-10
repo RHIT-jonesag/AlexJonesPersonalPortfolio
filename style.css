@@ -341,10 +341,14 @@ html {
 }
 
 .other-h{
-  text-decoration: underline;
+  text-decoration: none;
   color:#EAEFFF;
   font-size: 40px;
   font-style:italic;
+}
+
+.other-link{
+  text-decoration: none;
 }
 
 .other-h:hover{
