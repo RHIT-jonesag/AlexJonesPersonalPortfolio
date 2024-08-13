@@ -234,7 +234,7 @@ html {
   font-size: 80px;
   padding: 15px;
   border-radius:10px;
-  margin-top: 27vh;
+  margin-top: 23vh;
 }
 
 .mySlides{
@@ -330,7 +330,7 @@ html {
   margin:auto;
 
   /* Set a specific height */
-  min-height: 37vh;
+  min-height: 120vh;
 
   font-family:'Courier New', Courier, monospace;
   color: #EAEFFF;
@@ -381,24 +381,6 @@ html {
   translate: 450px;
 }
 
-.line3{
-  display:flex;
-  justify-content: center;
-  width:1px;
-  height:150px;
-  background-color: white;
-  translate: 450px;
-}
-
-.line4{
-  display:flex;
-  justify-content: center;
-  width:1px;
-  height:150px;
-  background-color: #3b4268;
-  translate: 450px;
-}
-
 .others{
   display: flex;
   flex-direction: column;
@@ -444,55 +426,26 @@ html {
   translate: 0px 40px;
 }
 
-.other4{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  translate: -125px;
-  overflow:hidden;
-}
-
-.other4-text{
-  translate: 0px 40px;
-}
-
-
 .project-image1{
-  opacity: 0;
+  opacity: 100;
   border-radius:600px;
 }
 
 .project-image2{
-  opacity: 0;
+  opacity: 100;
   border-radius:600px;
 }
 
 .project-image3{
-  opacity: 0; 
+  opacity: 100; 
   translate: -15px;
-  border-radius:600px;
-}
-
-.project-image4{
-  opacity: 0;
   border-radius:600px;
 }
 
 /* Contact Me */
 .contact-me{
-  /* The image used */
   background-color: #35394f;
-
-  /* url(img/Untitled\ design\ \(39\).png) */
-
-  /* Set a specific height */
   min-height: 36vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contact-title{
@@ -506,7 +459,7 @@ html {
 
 .contact-row1{
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   padding-top: 15px;
 }
@@ -519,6 +472,7 @@ html {
   border: solid #35394F 2px;
   padding:5px;
   font-size: 30px;
+  width: 546px;
 }
 
 .phone{
@@ -529,6 +483,7 @@ html {
   border: solid #35394F 2px;
   padding:5px;
   font-size: 30px;
+  width: 546px;
 }
 
 .email{
@@ -539,6 +494,7 @@ html {
   border: solid #35394F 2px;
   padding:5px;
   font-size: 30px;
+  width: 546px;
 }
 
 .name::placeholder{
@@ -566,8 +522,8 @@ html {
 .contact-row3{
   display:flex;
   justify-content: center;
-  padding:15px;
-  padding-bottom: 20px;
+  padding-top: 7px;
+  padding-bottom: 10px;
 }
 
 .send-message{
@@ -593,8 +549,9 @@ html {
   border: solid #35394F 2px;
   padding:10px;
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 0px;
   width: 86.2%;
+  padding-bottom: 100px;
 }
 
 /* Footer */
@@ -606,7 +563,7 @@ html {
 
 .tribute{
   display:flex;
-  justify-content: space-between;
+  justify-content: right;
   flex-direction: row;
   padding-left: 5px;
   color:#adb8dd;

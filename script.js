@@ -83,7 +83,6 @@ $(function () {
 const observer2 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting){
-      document.querySelector(".projects-title").classList.add("fadeInLeft")
       document.querySelector(".mySlides").classList.add("fadeInRight")
     }
   })
@@ -91,102 +90,75 @@ const observer2 = new IntersectionObserver(entries => {
 
 observer2.observe(document.querySelector(".slide-title"));
 
-// Other 1 Fade on Scroll
-const observer4 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".other1-text").classList.add("fadeInLeft")
-      document.querySelector(".project-image1").classList.add("fadeInBottom")
-    }
-  })
-})
+// // Other 1 Fade on Scroll
+// const observer4 = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting){
+//       document.querySelector(".other1-text").classList.add("fadeInLeft")
+//       document.querySelector(".project-image1").classList.add("fadeInBottom")
+//     }
+//   })
+// })
 
-observer4.observe(document.querySelector(".other1-text"));
+// observer4.observe(document.querySelector(".other1-text"));
 
-// Line 1 Fade on Scroll
-const observer8 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".line1").classList.add("stretch")
-    }
-  })
-})
+// // Line 1 Fade on Scroll
+// const observer8 = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting){
+//       document.querySelector(".line1").classList.add("stretch")
+//     }
+//   })
+// })
 
-observer8.observe(document.querySelector(".line1"));
+// observer8.observe(document.querySelector(".line1"));
 
-// Line 2 Fade on Scroll
-const observer9 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".line2").classList.add("stretch")
-    }
-  })
-})
+// // Line 2 Fade on Scroll
+// const observer9 = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting){
+//       document.querySelector(".line2").classList.add("stretch")
+//     }
+//   })
+// })
 
-observer9.observe(document.querySelector(".line2"));
+// observer9.observe(document.querySelector(".line2"));
 
-// Line 3 Fade on Scroll
-const observer10 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".line3").classList.add("stretch")
-    }
-  })
-})
+// // Other 2 Fade on Scroll
+// const observer5 = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting){
+//       document.querySelector(".other2-text").classList.add("fadeInLeft")
+//       document.querySelector(".project-image2").classList.add("fadeInBottom")
+//     }
+//   })
+// })
 
-observer10.observe(document.querySelector(".line3"));
+// observer5.observe(document.querySelector(".other2-text"));
 
-// Other 2 Fade on Scroll
-const observer5 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".other2-text").classList.add("fadeInLeft")
-      document.querySelector(".project-image2").classList.add("fadeInBottom")
-    }
-  })
-})
+// // Other 3 Fade on Scroll
+// const observer6 = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting){
+//       document.querySelector(".other3-text").classList.add("fadeInLeft")
+//       document.querySelector(".project-image3").classList.add("fadeInBottom")
+//     }
+//   })
+// })
 
-observer5.observe(document.querySelector(".other2-text"));
+// observer6.observe(document.querySelector(".other3-text"));
 
-// Other 3 Fade on Scroll
-const observer6 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".other3-text").classList.add("fadeInLeft")
-      document.querySelector(".project-image3").classList.add("fadeInBottom")
-    }
-  })
-})
-
-observer6.observe(document.querySelector(".other3-text"));
-
-// Other 4 Fade on Scroll
-const observer7 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".other4-text").classList.add("fadeInLeft")
-      document.querySelector(".project-image4").classList.add("fadeInBottom")
-    }
-  })
-})
+// // Other 4 Fade on Scroll
+// const observer7 = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting){
+//       document.querySelector(".other4-text").classList.add("fadeInLeft")
+//       document.querySelector(".project-image4").classList.add("fadeInBottom")
+//     }
+//   })
+// })
 
 observer7.observe(document.querySelector(".other4-text"));
-
-// Footer Page Fade on Scroll
-const observer3 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting){
-      document.querySelector(".insta").classList.add("fadeInBottom")
-      document.querySelector(".linkedin").classList.add("fadeInBottom")
-      document.querySelector(".github").classList.add("fadeInBottom")
-      document.querySelector(".discord").classList.add("fadeInBottom")
-      document.querySelector(".replit").classList.add("fadeInBottom")
-    }
-  })
-})
-
-observer3.observe(document.querySelector(".footer"));
-
 
 // Slideshow swapping slides feature
 let slideIndex = 1;
